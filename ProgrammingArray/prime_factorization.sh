@@ -13,7 +13,7 @@ do
 	while [ $(($n%$i)) -eq 0 ]
 	do
 		n=$(($n/$i))
-		primeFactor[((c++))]==$i;
+		primeFact[((c++))]==$i;
 	done
 done
 fi
