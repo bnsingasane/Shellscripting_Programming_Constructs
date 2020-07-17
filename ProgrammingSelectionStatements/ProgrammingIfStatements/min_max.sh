@@ -5,6 +5,7 @@ RANDOM=$$;
 a=$(($((RANDOM %900))+101));
 max=$$;
 min=$$;
+
 for i in ` seq 4 `
 do
 	b=$(($((RANDOM %900))+101));
@@ -22,6 +23,6 @@ do
 		min=$min;
 	fi
 done
- echo " minimum value=$min maximum value=$max"
+echo " minimum value=$min maximum value=$max"
 
 
