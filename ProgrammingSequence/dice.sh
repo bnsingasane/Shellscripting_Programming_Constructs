@@ -1,7 +1,5 @@
-#2 DICE NUMBER 1-6
 #!/bin/bash -x
 
-for i in `seq 1 6`
-do
-	echo $i
-done
+d=$(((RANDOM%6)+1))
+echo "Dice number:"$d
+echo""
