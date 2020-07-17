@@ -2,7 +2,6 @@
 
 echo "Enter a number:"
 read n
-
 echo "Enter your choice:"
 echo "1.feet to inch"
 echo "2.feet to meter"
