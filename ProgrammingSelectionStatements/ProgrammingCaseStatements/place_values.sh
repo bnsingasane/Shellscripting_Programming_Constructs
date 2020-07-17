@@ -1,38 +1,15 @@
 #!/bin/bash -x
 
-echo "Enter number"
+echo "Enter the number as 1,10,100,.... :"
 read n
 
-if `[ $n -eq 1 ]`
-then
-	echo "Unit"
-elif `[$n -eq 10 ]`
-then
-	echo "ten"
-elif `[ $n -eq 100 ]`
-then
-	echo "Hundred"
-elif `[ $n -eq 1000 ]`
-then 
-	echo "thousand"
-elif `[$n -eq 1000 ]`
-then
-	echo "ten thousand"
-elif `[ $n -eq 10000 ]`
-then
-	echo "Hundred Thousand"
-elif  `[ $n -eq 100000]`
-then
-	echo "million"
-elif `[ $n -eq  1000000 ]`
-then
-	echo "ten million"
-elif `[$n -eq 100000000 ]`
-then
-	echo "hundred million"
-elif `[$n -eq 100000000]`
-then
- 	echo "billion"
-else
-	echo "invalid input"
-fi
+case $n in
+	1)echo Units;;
+	10)echo Tens;;
+	100)echo Hundreds;;
+	1000)echo Thousands;;
+	10000)echo Ten of Thousands;;
+	100000)echo Hundreds of Thousands;;
+	1000000)echo Millions;;
+	1000000000)echo Billions;;
+esac
