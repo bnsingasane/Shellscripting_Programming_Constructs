@@ -1,7 +1,7 @@
-#3 DICE NUMBER AND PRINT THE RESULT
 #!/bin/bash -x
 
-a=$((1 +$RANDOM %6));
-b=$((1 +$RANDOM %6));
-c=$(( $a + $b ));
-echo $c
+dice1=$(((RANDOM%6)+1))
+dice2=$(((RANDOM%6)+1))
+sum=$(($dice1+$dice2))
+echo "Sum of two dice numbers "$dice1 "and" $dice2 "is:" $sum
+echo""
