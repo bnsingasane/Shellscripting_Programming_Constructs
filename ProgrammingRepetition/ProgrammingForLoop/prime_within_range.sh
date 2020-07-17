@@ -6,7 +6,6 @@ echo Enter a upper limit
 read u
 echo "The prime numbers in the range are:"
 count=0
-
 for((i=$l; i<=$u; i++))
 do
         for((j=1; j<=$i; j++))
