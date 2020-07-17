@@ -2,7 +2,6 @@
 
 echo Enter a number
 read  n
-
 for((i=2; i<=$n; i++))
 do
         while [ $(($n%$i)) == 0 ]
