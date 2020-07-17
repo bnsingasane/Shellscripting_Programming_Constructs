@@ -1,29 +1,16 @@
 #!/bin/bash -x
 
+#Write a program that takes day and month from the command line and
+#prints true if day of month is between March 20 and June 20, false otherwise.
 
-echo "Enter Day"
-read d;
+echo "Enter the day:"
+read day
+echo "Enter the month:"
+read month
 
-if `[ $d -lt 1 -o $d -gt 31 ]`
+if(($month==3 && $day > 20 && $day < 32)) || (($month==4 && $day > 0 && $day < 31)) || (($month==5 && $day > 0 && $day < 32)) || (($month==6 && $day > 0 && $day > 20))
 then
-	echo "Invalid Day"
+	echo True
 else
-	echo "Valid Day"
+	echo False
 fi
-
-echo "Enter the month"
-read m;
-if `[ $m -lt 0 -o $m -gt 12]`
-then
-	echo "Invalid Month"
-else
-	echo "Valid Month"
-fi
-
-if `[ $m -ge 3 ] && [ $m -le 6 ] && [ $d -ge 20 ] && [$d -le 32]`
-then
-	echo "true"
-else
-	echo "False"
-fi
-
