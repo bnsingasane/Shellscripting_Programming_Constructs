@@ -3,6 +3,7 @@
 second(){
 first=0
 second=0
+
 for ((i=0 ; i<10 ; i++))
 do
 	if [ ${rand[i]} -gt $first ]
