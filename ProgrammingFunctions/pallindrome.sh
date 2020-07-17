@@ -21,7 +21,6 @@ else
 fi
 }
 
-
 echo -n "Enter number:"
 read n
 Pallindrome $n
