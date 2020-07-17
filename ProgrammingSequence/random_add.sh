@@ -1,4 +1,3 @@
-#4 TWO RANDOM TWO DIGIT VALUES SUM AND AVG
 #!/bin/bash -x
  
 sum=0;
