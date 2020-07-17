@@ -15,6 +15,5 @@ do
                 tail=$(($tail+1));
         fi
 done
-
 echo "head is $head"
 echo "tail is $tail"
