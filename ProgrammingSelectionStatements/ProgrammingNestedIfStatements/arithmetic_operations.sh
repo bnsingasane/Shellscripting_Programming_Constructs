@@ -1,5 +1,6 @@
 #!/bin/bash -x
 
+
 echo "Enter the number";
 read a
 echo "Enter the number";
