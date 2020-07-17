@@ -6,14 +6,12 @@ degF(){
 	e=`(echo $d + 32 | bc)`
 	echo $e
 }
-
 degC(){
 	c=`(echo 'scale=2; 5 / 9' | bc)`
 	d=`(echo $degF - 32 | bc)`
 	e=`(echo 'scale=2;'$d' * '$c'' | bc)`
 	echo $e
 }
-
 echo -e "1:degC to degF\n2:degF to degC"
 read ch
 
