@@ -2,7 +2,6 @@
 
 echo "Enter number between (1-6)"
 read n
-
 for ((i=1 ; i<=6 ; i++))
 do
 	dice[$i]=0;
@@ -30,8 +29,6 @@ do
 		echo "Maximum is $i"
 	fi
 done
-
-
 for ((i=1 ; i<=6 ; i++))
 do
 	if [ ${dice[$i]} -lt $n ]
