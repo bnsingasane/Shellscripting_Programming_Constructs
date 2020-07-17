@@ -1,29 +1,17 @@
 #!/bin/bash -x
 
-echo -n "Enter the number"
+echo "Enter single digit number:"
 read n
 
-len=$(echo $n | wc -c)
-len=$(( $len - l ))
-
-echo "Your number $n in words:"
-for(( i=1 ; i<=$len; i++))
-do
-	digit=$(echo $n | cut -c $i )
-	
-	case $digit in 
-	     0)	echo -n "zero" ;;
-	     1)	echo -n  "one" ;;
-	     2)	echo -n "two" ;;
-	     3)	echo -n "three" ;;
-	     4)	echo -n "four" ;;
-	     5)	echo -n "five" ;;
-	     6)	echo -n "six" ;;
-	     7)	echo -n "seven" ;;
-	     8)	echo -n "eight" ;;
-	     9)	echo -n "nine" ;;
-	esac
-done
-
-echo " "
-
+case $n in
+	0)echo "Zero";;
+	1)echo "One";;
+	2)echo "Two";;
+	3)echo "Three";;
+	4)echo "Four";;
+	5)echo "Five";;
+	6)echo "Six";;
+	7)echo "Seven";;
+	8)echo "Eight";;
+	9)echo "Nine";;
+esac
