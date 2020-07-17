@@ -3,6 +3,7 @@
 money=100
 bet=0
 won=0
+
 while [ $((money!=200)) -eq $(($money!=0)) ]
 do
         R=$(($((RANDOM))%2));
