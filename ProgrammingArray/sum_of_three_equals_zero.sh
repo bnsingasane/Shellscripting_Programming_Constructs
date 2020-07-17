@@ -2,7 +2,6 @@
 
 read -p "Enter no of elements in array " n
 echo " Enter the elements\n "
-
 for (( i=0; i<$n; i++))
 do 
 	echo "Enter elements \n" 
