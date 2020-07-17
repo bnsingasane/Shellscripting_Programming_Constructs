@@ -5,7 +5,6 @@ read n
 low=0
 high=100
 count=0
-
 while `[ $count -eq 0 ]`
 do
         mid=$(($(($low + $high))/2))
