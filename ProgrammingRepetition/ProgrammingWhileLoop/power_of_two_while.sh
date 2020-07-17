@@ -1,5 +1,6 @@
 #!/bin/bash -x
 
+
 echo Enter a value of n
 read n
 
