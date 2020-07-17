@@ -1,18 +1,14 @@
 #!/bin/bash -x
 
-echo "select a week day (1-7):"
+echo "Enter number from 0-6:"
 read n
 
-select i in mon tue wed thur fri sat sun exit
-	do
-		case $i in
-			mon) echo "Monday" ;;
-			tue) echo "Tuesday" ;;
-			wed) echo "Wednesday" ;;
-			thur) echo "Thursday" ;;
-			fri) echo "Friday" ;;
-			sat) echo "Saturday" ;;
-			sun) echo "Sunday" ;;
-			exit) exit;;
-		esac
-	done
+case $n in
+	0)echo Sunday;;
+	1)echo Monday;;
+	2)echo Tuesday;;
+	3)echo Wednesday;;
+	4)echo Thursday;;
+	5)echo Friday;;
+	6)echo Saturday;;
+esac
