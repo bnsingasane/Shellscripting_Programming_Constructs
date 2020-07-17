@@ -1,5 +1,6 @@
 #!/bin/bash -x
 
+
 echo "Enter the index number of day:"
 read day
 
