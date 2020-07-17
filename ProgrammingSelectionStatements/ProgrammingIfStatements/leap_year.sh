@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-echo "Enter the year (YYYY): "
+echo "Enter the year (YYYY):"
 read year
 
 if (($year % 4 == 0)) && (($year % 100 != 0)) || (($year % 400 == 0))
