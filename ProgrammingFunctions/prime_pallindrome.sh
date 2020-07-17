@@ -21,7 +21,7 @@ Pallindrome(){
 
 d=0;
 rev=" ";
-on=$n;
+temp=$n;
  
 while [ $n -gt 0 ]
 do
@@ -30,15 +30,13 @@ do
     rev=$( echo ${rev}${d} ) 
 done
  
-if [ $on -eq $rev ];
+if [ $temp -eq $rev ];
 then
   echo "Number is palindrome"
 else
   echo "Number is NOT palindrome"
 fi
 }
-
-
 
 read -p "Enter number :" n
 prime $n 
